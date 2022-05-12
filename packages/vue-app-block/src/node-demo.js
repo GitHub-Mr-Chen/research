@@ -1,0 +1,5 @@
+const fs = require('fs')
+// fs.createReadStream()
+// const result =  fs.readFileSync('./test-js.js')
+const result =  fs.createReadStream('./test-js.js').pipe()
+console.log('result', result)
