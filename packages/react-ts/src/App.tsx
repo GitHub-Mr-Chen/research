@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
+import logo from './assets/logo.svg';
 import './App.css';
 
 import { Layout, Menu } from 'antd'
@@ -13,8 +13,7 @@ import Router, { menuConfigs } from './router'
 import { useNavigate, useLocation, To } from 'react-router-dom'
 const { Header, Sider, Content } = Layout
 
-function App(props: any) {
-  console.log('props :>> ', props)
+function App() {
   const [collapsed, { toggle }] = useToggle()
   const navigate = useNavigate()
   const { pathname } = useLocation()
@@ -25,7 +24,7 @@ function App(props: any) {
   return (
     <Layout id="components-layout">
       <Sider trigger={null} collapsible collapsed={collapsed}>
-        <div className="logo" >react-ts</div>
+        <div className="logo" ><img className='logo-img' src={logo} alt="logo" /></div>
         <Menu
           theme="dark"
           mode="inline"
