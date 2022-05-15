@@ -32,6 +32,6 @@ export default defineConfig({
     // //启用/禁用 CSS 代码拆分
     // cssCodeSplit: true,
     //构建后是否生成 source map 文件
-    sourcemap: true,
+    // sourcemap: true,
   }
 })
